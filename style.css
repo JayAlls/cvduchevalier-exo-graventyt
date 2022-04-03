@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.naviguation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px black solid;
+  padding-bottom: 10px;
+  background-color: gray;
+}
+
+.naviguation #logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.naviguation #logo p {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+
+.naviguation #logo img {
+  width: 80px;
+  height: 80px;
+}
+
+.naviguation nav {
+  margin-right: 10%;
+}
+
+.naviguation nav ul {
+  display: flex;
+  list-style-type: none;
+
+}
+
+.naviguation nav ul li a {
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  margin-right: 30px;
+  font-size: 1.2rem;
+}
+
+.naviguation nav ul li a:hover {
+  text-decoration: underline;
+}
+/* END HEADER */
+.section p {
+  font-size: 2vw;
+  padding-bottom: 5%;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+/* INTRO */
+
+.section h1 {
+  font-size: 3.5vw;
+  text-decoration: underline;
+  margin-bottom: 10%;
+}
+
+.section .intro,
+.section .intro h1 {
+  background-image: url(./images/images/intro.jpg);
+}
+
+/* END INTRO */
+
+/*CONQUETES*/
+.section .conquetes {
+  background-color: gray;
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.section .conquetes p {
+  display: inline-block;
+  padding-top: 10px;
+  margin: 0 auto;
+  border-bottom: 1px solid whitesmoke;
+  width: 50%;
+}
+
+/*END CONQUETES*/
+
+/*ARMURERIE*/
+.section .armurerie {
+  background-image: url(./images/images/armurerie.jpg);
+
+}
+.section .armurerie img {
+  height: 35%;
+  width: 15%;
+}
+.section .armurerie .armes{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.section .armurerie .armes .arme {
+  border: 2px solid white;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  background-color: aliceblue;
+  opacity: 0.7;
+}
+
+/*END ARMURERIE*/
+
+/*FOOTER*/
+footer {
+  background-color: grey;
+  height: 150px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer #contact {
+  font-size: 1.8vw;
+  font-style: oblique;
+}
+
+footer .copyright {
+  font-size: 1.3vw;
+  font-weight: bold;
+}
+/*END FOOTER*/
+
+@media screen and (max-width: 720px) {
+  .naviguation nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .section p {
+    font-size: 3.5vw;
+  }
+  footer #contact {
+    font-size: 3.5vw;
+  }
+  footer .copyright {
+    font-size: 2.5vw;
+  }
+}
+
+
+
